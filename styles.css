@@ -1,0 +1,48 @@
+:root {
+  --color-principal: #1A5755;
+  --color-secundario: #ffffff;
+  --color-acento: #e0f2f1;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background-color: var(--color-acento);
+}
+
+header {
+  background-color: var(--color-principal);
+  color: var(--color-secundario);
+  padding: 1em;
+  text-align: center;
+}
+
+.tarjetas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 2em;
+}
+
+.card {
+  background-color: var(--color-secundario);
+  padding: 1.5em;
+  border-radius: 12px;
+  text-decoration: none;
+  color: var(--color-principal);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+  border-left: 6px solid var(--color-principal);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+  text-align: center;
+  padding: 1em;
+  background-color: #f0f0f0;
+  color: #555;
+}
